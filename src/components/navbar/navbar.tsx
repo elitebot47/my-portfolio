@@ -1,29 +1,36 @@
-import { Briefcase, UserCircle2 } from "lucide-react";
-import { Button } from "../ui/button";
+import { Briefcase, HomeIcon, Phone } from "lucide-react";
 import { Separator } from "../ui/separator";
 import { ModeToggle } from "./ModeToggle";
+import NavbarButton from "./navbarButton";
 
-export default function Navbar() {
+export default async function Navbar() {
   return (
     <div
-      className={`lg:w-sm rounded-full h-11 flex dark:bg-black bg-white p-1 `}
+      className={`lg:max-w-xs rounded-full h-11 flex dark:bg-black/70 bg-white p-1 `}
     >
-      <Button className="rounded-l-full h-full" variant="outline">
-        <UserCircle2 />
-      </Button>
-      <Separator className="bg-white/50 mx-1" orientation="vertical" />
-      <Button className="rounded-full h-full" variant="outline">
-        <Briefcase />
-        Work
-      </Button>
+      <NavbarButton
+        href="/"
+        className="  mx-auto rounded-l-full"
+        icon={<HomeIcon />}
+      />
+      <Separator className=" bg-white/30 mx-1.5" orientation="vertical" />
+      <NavbarButton
+        href="/work"
+        text="Work
+"
+        className="rounded-full mr-1.5"
+        icon={<Briefcase />}
+      />
+      <NavbarButton
+        href="/contact"
+        text="Contact
+"
+        className="rounded-full"
+        icon={<Phone />}
+      />
+      <Separator className="bg-white/30 mx-1.5" orientation="vertical" />
 
-      <Button className="rounded-full h-full" variant="outline">
-        Button
-      </Button>
-
-      <Button asChild className="rounded-r-full h-full" variant="outline">
-        <ModeToggle />
-      </Button>
+      <ModeToggle className={``} />
     </div>
   );
 }
