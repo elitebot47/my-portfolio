@@ -79,10 +79,16 @@ function SkillColumn({
   );
 }
 
-export default async function SkillsArea() {
+export default async function SkillsArea({
+  className,
+}: {
+  className?: string;
+}) {
   return (
-    <div className="">
-      <div className="text-4xl text-center lg:text-start">Technical skills</div>
+    <div className={`${className} `}>
+      <div className="text-4xl text-center lg:text-start mb-3.5">
+        Technical skills
+      </div>
       <div>
         <SkillColumn heading="Front-End Development" iconsArray={FEicons} />
         <SkillColumn heading="Back-End Development" iconsArray={BEicons} />
