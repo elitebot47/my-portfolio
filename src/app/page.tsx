@@ -1,11 +1,12 @@
 import ProfilePictureArea from "@/components/homePage/profile-picture-side/profile-picture-area";
 import SkillsArea from "@/components/homePage/text-content-area/skills";
 import SocialIconList from "@/components/homePage/text-content-area/social-icon-list";
+import { Separator } from "@/components/ui/separator";
 
 export default async function Home() {
   return (
-    <div className="lg:flex  w-full  items-center  justify-center md:px-80 px-2 border-2 mt-28">
-      <div className="md:flex-1 flex w-full h-full justify-center">
+    <div className="lg:flex  w-full    justify-center md:px-80 px-2 border-2 mt-28">
+      <div className="md:flex-1 flex w-full h-full">
         <ProfilePictureArea />
       </div>
       <div
@@ -24,6 +25,10 @@ export default async function Home() {
           out new ideas. I've worked on a bunch of projects, and I have a little
           obsession with Next.js..`}
         </div>
+        <Separator
+          orientation="horizontal"
+          className="w-full my-3 h-2 bg-gray-700"
+        />
         <SkillsArea />
       </div>
     </div>
