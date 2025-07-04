@@ -3,7 +3,7 @@ import { CldImage } from "next-cloudinary";
 
 export default function ProfilePictureArea() {
   return (
-    <div className="h-full  w-full flex-col flex justify-center items-center">
+    <div className="h-full lg:pl-12 w-full flex-col flex justify-center items-center">
       <div className="w-[170px] border-2 flex justify-center items-center rounded-full h-[170px] ">
         <CldImage
           alt="profile picture"

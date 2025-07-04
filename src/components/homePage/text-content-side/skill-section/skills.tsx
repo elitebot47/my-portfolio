@@ -70,7 +70,7 @@ function SkillColumn({
   return (
     <div>
       <div className="text-2xl  text-center lg:text-start">{heading}</div>
-      <div className="flex justify-center md:justify-start flex-wrap gap-1">
+      <div className="flex justify-center mt-0.5 md:justify-start flex-wrap gap-1.5">
         {iconsArray.map((icon) => (
           <SkillIcon name={icon.name} icon={icon.symbol} key={icon.name} />
         ))}
@@ -89,7 +89,7 @@ export default async function SkillsArea({
       <div className="text-4xl text-center lg:text-start mb-4">
         Technical skills
       </div>
-      <div className="flex flex-col gap-4">
+      <div className="flex flex-col gap-5">
         <SkillColumn heading="Front-End Development" iconsArray={FEicons} />
         <SkillColumn heading="Back-End Development" iconsArray={BEicons} />
         <SkillColumn
