@@ -1,7 +1,18 @@
 @import "tailwindcss";
 @import "tw-animate-css";
 @plugin 'tailwind-scrollbar';
-
+@theme {
+  --background-image-gradient-blue-to-black: radial-gradient(
+    ellipse 70% 100% at 50% 0%,
+    #38bdf8 0%,
+    #000 100%
+  );
+  --background-image-gradient-blue-to-white: radial-gradient(
+    ellipse 70% 100% at 50% 0%,
+    #38bdf8 0%,
+    #ffffff 100%
+  );
+}
 @custom-variant dark (&:is(.dark *));
 
 @theme inline {

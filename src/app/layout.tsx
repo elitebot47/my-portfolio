@@ -1,5 +1,4 @@
 import Navbar from "@/components/navbar/navbar";
-import Texture from "@/components/root-texture/texture";
 import type { Metadata } from "next";
 import { ThemeProvider as NextThemesProvider } from "next-themes";
 import "./globals.css";
@@ -23,14 +22,14 @@ export default function RootLayout({
           enableSystem
           disableTransitionOnChange
         >
-          <div className="relative min-h-screen scrollbar-none overflow-y-auto   overflow-x-hidden w-full">
+          <div className="relative min-h-screen  w-full">
             <nav className="fixed z-50  top-8 left-1/2 -translate-x-1/2">
               <Navbar />
             </nav>
-            <div className="absolute inset-0 flex justify-center blur-3xl z-10 pointer-events-none">
-              <Texture />
+            <div className="fixed overflow-hidden inset-0 flex justify-center blur-3xl z-10 pointer-events-none">
+              <div className="h-full bg-gradient-blue-to-white dark:bg-gradient-blue-to-black w-full mx-auto flex"></div>
             </div>
-            <main className="absolute h-screen w-screen z-20 bg-white/50 dark:bg-black/70">
+            <main className="absolute h-screen w-screen scrollbar-none overflow-y-auto   overflow-x-hidden z-20 bg-white/50 dark:bg-black/70">
               {children}
             </main>
           </div>

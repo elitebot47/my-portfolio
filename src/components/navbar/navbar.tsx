@@ -32,7 +32,7 @@ export default async function Navbar() {
         orientation="vertical"
       />
 
-      <ModeToggle className={``} />
+      <ModeToggle />
     </div>
   );
 }
