@@ -1,6 +1,6 @@
 import ProfilePictureArea from "@/components/profile-picture-side/page";
 
-export default function Home() {
+export default async function Home() {
   return (
     <div className="flex  w-full  items-center justify-center px-80 border-2 mt-28">
       <div className="flex-1 flex h-full justify-center">
