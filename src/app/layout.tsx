@@ -23,11 +23,11 @@ export default function RootLayout({
           disableTransitionOnChange
         >
           <div className="relative min-h-screen  w-full">
-            <nav className="fixed z-50  top-8 left-1/2 -translate-x-1/2">
+            <nav className="fixed z-50 bottom-8 lg:top-8 left-1/2 -translate-x-1/2">
               <Navbar />
             </nav>
-            <div className="fixed overflow-hidden inset-0 flex justify-center blur-3xl z-10 pointer-events-none">
-              <div className="h-full bg-gradient-blue-to-white dark:bg-gradient-blue-to-black w-full mx-auto flex"></div>
+            <div className="fixed osverflow-hidden inset-0 flex justify-center blur-3xl z-10 pointer-events-none">
+              <div className="h-full bg-gradient-blue-to-white-inverted dark:bg-gradient-blue-to-black-inverted lg:bg-gradient-blue-to-white lg:dark:bg-gradient-blue-to-black w-full mx-auto flex"></div>
             </div>
             <main className="absolute h-screen w-screen scrollbar-none overflow-y-auto   overflow-x-hidden z-20 bg-white/50 dark:bg-black/70">
               {children}

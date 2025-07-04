@@ -28,8 +28,8 @@ export default function NavbarButton({
       className={clsx(
         className,
         href === path
-          ? "border bg-background shadow-xs  dark:bg-input/70 dark:border-input"
-          : "!hover:border-1 dark:hover:bg-input/30 hover:border-gray-700",
+          ? "bg-background/70  border-1 border-gray-500/50  dark:bg-input/70 dark:border-input"
+          : "!hover:border-1 dark:hover:bg-input/30 hover:bg-input/30 hover:border-gray-500/40",
         "rounded-full cursor-pointer h-full duration-500  "
       )}
       variant="outline"

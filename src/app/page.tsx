@@ -5,7 +5,7 @@ import { Separator } from "@/components/ui/separator";
 
 export default async function Home() {
   return (
-    <div className="lg:flex  w-full    justify-center md:px-80 px-2 border-2 mt-28">
+    <div className="lg:flex  w-full    justify-center md:px-80 px-2 border-2 mb-40 lg:mb-0 mt-14 lg:mt-28">
       <div className="md:flex-1 flex w-full h-full">
         <ProfilePictureArea />
       </div>
