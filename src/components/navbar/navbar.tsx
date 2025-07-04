@@ -6,7 +6,7 @@ import NavbarButton from "./navbarButton";
 export default async function Navbar() {
   return (
     <div
-      className={`lg:max-w-xs rounded-full h-11 flex dark:bg-black/70 bg-white/70 p-1 `}
+      className={`lg:max-w-xs backdrop-blur-lg rounded-full h-11 flex dark:bg-black/70 bg-white/70 p-1 `}
     >
       <NavbarButton href="/" className="   " icon={<HomeIcon />} />
       <Separator

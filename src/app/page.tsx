@@ -3,13 +3,19 @@ import SocialIconList from "@/components/homePage/text-content-area/social-icon-
 
 export default async function Home() {
   return (
-    <div className="flex  w-full  items-center justify-center px-80 border-2 mt-28">
-      <div className="flex-1 flex  h-full justify-center">
+    <div className="lg:flex  w-full  items-center justify-center md:px-80 px-2 border-2 mt-28">
+      <div className="md:flex-1 flex w-full h-full justify-center">
         <ProfilePictureArea />
       </div>
-      <div className={`flex-2 px-8  justify-start flex-col h-full`}>
-        <div className="text-6xl">Rishab Yadav</div>
-        <div className="text-4xl mb-6">Full Stack Web Developer</div>
+      <div
+        className={`md:flex-2 md:px-8 w-full  md:justify-start flex-col h-full`}
+      >
+        <div className="md:text-6xl flex justify-center md:justify-normal text-3xl">
+          Rishab Yadav
+        </div>
+        <div className="md:text-4xl flex justify-center md:justify-normal mb-6">
+          Full Stack Web Developer
+        </div>
 
         <SocialIconList />
       </div>

@@ -16,7 +16,7 @@ export default function ProfilePictureArea() {
         />
       </div>
 
-      <div className="flex mt-6 justify-center text-xl  items-center">
+      <div className="flex md:mt-6 mt-2.5 justify-center text-xl  items-center">
         Gurgaon/India
       </div>
     </div>

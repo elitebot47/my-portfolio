@@ -24,7 +24,7 @@ export default function RootLayout({
           disableTransitionOnChange
         >
           <div className="relative min-h-screen w-full">
-            <nav className="fixed z-50 top-8 left-1/2 -translate-x-1/2">
+            <nav className="fixed z-50  top-8 left-1/2 -translate-x-1/2">
               <Navbar />
             </nav>
             <div className="absolute inset-0 flex justify-center blur-3xl z-10 pointer-events-none">

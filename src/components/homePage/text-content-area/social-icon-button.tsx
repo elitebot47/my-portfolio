@@ -18,13 +18,13 @@ export default function SocialIconButton({
   return (
     <Button
       variant={`outline`}
-      className={` ${className} border-1 px-3 !h-8 cursor-pointer hover:bg-input/50 rounded-full items-center border-gray-700`}
+      className={` ${className} border-1 px-3 !h-10 md:!h-8 cursor-pointer hover:bg-input/50 rounded-full items-center border-gray-700`}
       {...props}
       asChild
     >
       <Link className=" h-full " target="_blank" href={href}>
-        <div className="dark:!text-white !text-black">{icon}</div>
-        {text}
+        <div className=" dark:!text-white !text-black">{icon}</div>
+        <div className="hidden md:block">{text}</div>
       </Link>
     </Button>
   );
