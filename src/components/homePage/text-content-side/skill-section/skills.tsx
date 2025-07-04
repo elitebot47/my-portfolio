@@ -86,10 +86,10 @@ export default async function SkillsArea({
 }) {
   return (
     <div className={`${className} `}>
-      <div className="text-4xl text-center lg:text-start mb-3.5">
+      <div className="text-4xl text-center lg:text-start mb-4">
         Technical skills
       </div>
-      <div>
+      <div className="flex flex-col gap-4">
         <SkillColumn heading="Front-End Development" iconsArray={FEicons} />
         <SkillColumn heading="Back-End Development" iconsArray={BEicons} />
         <SkillColumn

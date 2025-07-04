@@ -5,8 +5,8 @@ import SocialIconList from "@/components/homePage/text-content-side/social-icon-
 
 export default async function Home() {
   return (
-    <div className="lg:flex w-full justify-center lg:pl-80 lg:pr-48 px-2 border-2 mb-40 lg:mb-0 mt-14 lg:mt-28">
-      <div className="md:flex-1 lg:sticky lg:top-24 flex w-full h-full">
+    <div className="lg:flex w-full justify-center lg:pl-80 lg:pr-48 px-2  mb-40 lg:mb-0 mt-14 lg:mt-36">
+      <div className="md:flex-1 mt-4 lg:sticky lg:top-24 flex w-full h-full">
         <ProfilePictureArea />
       </div>
       <div
@@ -23,12 +23,12 @@ export default async function Home() {
         <div className=" mt-8 mb-9 text-xl">
           {`I'm a full-stack developer, and I love building cool stuff and trying
           out new ideas. I've worked on a bunch of projects, and I have a little
-          obsession with Next.js..`}
+          obsession with Next.js`}
         </div>
 
-        <SkillsArea className="mb-6 border rounded-4xl  px-4 py-6" />
+        <SkillsArea className=" bg-accent/20 backdrop-blur-lg shadow-inner shadow-black/15 dark:shadow-white/15 mb-6 border rounded-4xl  px-4 py-6" />
 
-        <Education className="border rounded-4xl px-4 py-6" />
+        <Education className=" bg-accent/20 backdrop-blur-lg shadow-inner shadow-black/15 dark:shadow-white/15 mb-6 border rounded-4xl  px-4 py-6" />
       </div>
     </div>
   );

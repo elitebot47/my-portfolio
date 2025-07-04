@@ -6,7 +6,7 @@ import NavbarButton from "./navbarButton";
 export default async function Navbar() {
   return (
     <div
-      className={` max-w-xs  backdrop-blur-lg  rounded-full lg:h-12 h-[51px] flex dark:bg-black/70 bg-white/70 p-1 `}
+      className={` max-w-xs shadow-inner dark:shadow-white/20 shadow-black/15 backdrop-blur-lg  rounded-full lg:h-12 h-[51px] flex dark:bg-black/70 bg-white/70 p-1 `}
     >
       <NavbarButton href="/" icon={<HomeIcon />} />
       <Separator
@@ -23,7 +23,7 @@ export default async function Navbar() {
       <Separator
         className="dark:bg-white/30 bg-black/30 lg:mx-1.5 mx-1"
         orientation="vertical"
-      />
+      />  
       <ModeToggle />
     </div>
   );
