@@ -1,9 +1,7 @@
 "use client";
-
-import { useTheme } from "next-themes";
-
 import { Button } from "@/components/ui/button";
 import { Moon, SunIcon } from "lucide-react";
+import { useTheme } from "next-themes";
 import { useEffect, useState } from "react";
 
 export function ModeToggle({ className }: { className?: string }) {
@@ -17,7 +15,7 @@ export function ModeToggle({ className }: { className?: string }) {
   }
   return (
     <Button
-      className={`!${className} dark:hover:bg-input/30  cursor-pointer h-full duration-500 !hover:border-1 hover:border-gray-700  rounded-r-full  w-fit"
+      className={`!${className}rounded-full dark:hover:bg-input/30  cursor-pointer h-full duration-500 !hover:border-1 hover:border-gray-700  rounded-r-full  w-fit"
      `}
       variant="outline"
       onClick={() => {

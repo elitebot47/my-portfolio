@@ -30,7 +30,7 @@ export default function RootLayout({
             <div className="absolute inset-0 flex justify-center blur-3xl z-10 pointer-events-none">
               <Texture />
             </div>
-            <main className="relative h-screen w-screen z-20 bg-white/50 dark:bg-black/70">
+            <main className="absolute h-screen w-screen z-20 bg-white/50 dark:bg-black/70">
               {children}
             </main>
           </div>
