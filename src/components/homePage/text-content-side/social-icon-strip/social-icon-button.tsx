@@ -18,7 +18,7 @@ export default function SocialIconButton({
   return (
     <Button
       variant={`outline`}
-      className={` ${className} border-1 px-3 !h-10 md:!h-8 cursor-pointer hover:bg-input/50 rounded-full items-center border-gray-700`}
+      className={` ${className} border px-3 !h-10 md:!h-8 cursor-pointer hover:bg-input/50 rounded-full items-center border-gray-700`}
       {...props}
       asChild
     >

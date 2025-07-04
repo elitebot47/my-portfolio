@@ -1,6 +1,6 @@
 import ProfilePictureArea from "@/components/homePage/profile-picture-side/profile-picture-area";
-import SkillsArea from "@/components/homePage/text-content-area/skills";
-import SocialIconList from "@/components/homePage/text-content-area/social-icon-list";
+import SkillsArea from "@/components/homePage/text-content-side/skill-section/skills";
+import SocialIconList from "@/components/homePage/text-content-side/social-icon-strip/social-icon-list";
 import { Separator } from "@/components/ui/separator";
 
 export default async function Home() {
@@ -30,6 +30,10 @@ export default async function Home() {
           className="w-full my-3 h-2 bg-gray-700"
         />
         <SkillsArea />
+        <Separator
+          orientation="horizontal"
+          className="w-full my-3 h-2 bg-gray-700"
+        />
       </div>
     </div>
   );

@@ -6,32 +6,24 @@ import NavbarButton from "./navbarButton";
 export default async function Navbar() {
   return (
     <div
-      className={`lg:max-w-xs backdrop-blur-lg rounded-full h-11 flex dark:bg-black/70 bg-white/70 p-1 `}
+      className={` max-w-xs  backdrop-blur-lg  rounded-full lg:h-12 h-[51px] flex dark:bg-black/70 bg-white/70 p-1 `}
     >
-      <NavbarButton href="/" className="   " icon={<HomeIcon />} />
+      <NavbarButton href="/" icon={<HomeIcon />} />
       <Separator
-        className=" dark:bg-white/30 bg-black/30 mx-1.5"
+        className=" dark:bg-white/30 bg-black/30 mx-1 lg:mx-1.5"
         orientation="vertical"
       />
       <NavbarButton
         href="/work"
-        text="Work
-"
-        className=" mr-1.5"
+        text="Work"
+        className="lg:mr-1.5 mr-1"
         icon={<Briefcase />}
       />
-      <NavbarButton
-        href="/contact"
-        text="Contact
-"
-        className=""
-        icon={<Phone />}
-      />
+      <NavbarButton href="/contact" text="Contact" icon={<Phone />} />
       <Separator
-        className="dark:bg-white/30 bg-black/30 mx-1.5"
+        className="dark:bg-white/30 bg-black/30 lg:mx-1.5 mx-1"
         orientation="vertical"
       />
-
       <ModeToggle />
     </div>
   );

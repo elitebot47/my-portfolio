@@ -15,7 +15,7 @@ export function ModeToggle({ className }: { className?: string }) {
   }
   return (
     <Button
-      className={`!${className} dark:hover:bg-input/30 hover:border-gray-500/40 hover:bg-input/30 cursor-pointer h-full duration-500 !hover:border-1   rounded-full  w-fit"
+      className={`!${className} dark:hover:bg-input/30 hover:border-gray-500/40 hover:bg-input/30 cursor-pointer h-full duration-500 !hover:border   rounded-full  w-full"
      `}
       variant="outline"
       onClick={() => {
