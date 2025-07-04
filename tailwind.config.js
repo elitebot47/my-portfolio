@@ -1,9 +1,7 @@
-module.exports = {
-  content: [
-    "./src/**/*.{js,ts,jsx,tsx}",
-    "./app/**/*.{js,ts,jsx,tsx}",
-    // add other paths as needed
-  ],
+import tailwindScrollbar from "tailwind-scrollbar";
+
+const config = {
+  content: ["./src/**/*.{js,ts,jsx,tsx}", "./app/**/*.{js,ts,jsx,tsx}"],
   theme: {
     extend: {
       backgroundImage: {
@@ -11,5 +9,7 @@ module.exports = {
       },
     },
   },
-  plugins: [],
+  plugins: [tailwindScrollbar],
 };
+
+export default config;

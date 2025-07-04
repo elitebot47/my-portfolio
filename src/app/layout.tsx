@@ -19,11 +19,11 @@ export default function RootLayout({
       <body className="antialiased">
         <NextThemesProvider
           attribute="class"
-          defaultTheme="system"
+          defaultTheme="dark"
           enableSystem
           disableTransitionOnChange
         >
-          <div className="relative min-h-screen w-full">
+          <div className="relative min-h-screen scrollbar-none overflow-y-auto   overflow-x-hidden w-full">
             <nav className="fixed z-50  top-8 left-1/2 -translate-x-1/2">
               <Navbar />
             </nav>
