@@ -30,7 +30,7 @@ const projects: ProjectProps[] = [
     stage: "Beta",
   },
   {
-    id: 4,
+    id: 3,
     title: "Personal Finance Tracker",
     description:
       "A robust and intuitive personal finance tracking application designed to help users manage transactions, track budgets.",
@@ -40,7 +40,7 @@ const projects: ProjectProps[] = [
     stage: "Beta",
   },
   {
-    id: 3,
+    id: 4,
     title: "Wavybox",
     description:
       "A modern, real-time social media platform. Instantly share posts, follow users, and engage with a sleek, responsive interface.",
@@ -49,13 +49,35 @@ const projects: ProjectProps[] = [
     deployment_url: "https://wavy-box.vercel.app/",
     stage: "Development",
   },
+  {
+    id: 5,
+    title: "Notely",
+    description:
+      "A minimalist, Google Keep-inspired note-taking app. Create, organize, and retrieve notes & to-dos effortlessly with a clean, responsive interface.",
+    thumbnails: [],
+    github_url: "https://github.com/elitebot47/Notely",
+    deployment_url: "",
+    stage: "Archived",
+  },
+  {
+    id: 6,
+    title: "This portfolio ",
+    description: "",
+    thumbnails: [],
+    github_url: "https://github.com/elitebot47/my-portfolio",
+    deployment_url: "",
+    stage: "Beta",
+  },
 ];
 
 export default async function ProjectList() {
   return (
-    <div className="w-full  flex flex-col gap-10 items-center h-full">
+    <div className="w-full  flex flex-col gap-10 pb-28 items-center h-fit">
       {projects.map((project: ProjectProps) => (
-        <div className="dark:shadow-lg shadow-sm  rounded-4xl" key={project.id}>
+        <div
+          className="dark:shadow-lg shadow-sm w-full rounded-4xl"
+          key={project.id}
+        >
           <ProjectCard
             title={project.title}
             description={project.description}

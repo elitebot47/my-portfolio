@@ -56,9 +56,6 @@ const COMMUNICATIONicons = [{ name: "Socket.IO", symbol: <SiSocketdotio /> }];
 const TOOLSicons = [
   { name: "Git/GitHub", symbol: <FaGitAlt /> },
   { name: "VS Code", symbol: <VscVscode /> },
-  {
-    name: "Cursor AI",
-  },
 ];
 
 function SkillColumn({

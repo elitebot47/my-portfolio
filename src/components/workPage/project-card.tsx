@@ -51,7 +51,7 @@ export default function ProjectCard({
   stage: "Completed" | "Development" | "Beta" | "Archived";
 }) {
   return (
-    <div className="lg:w-4xl h-auto  lg:h-fit  border shadow-accent backdrop-blur-sm dark:bg-black/40 bg-white/40 shadow-inner rounded-4xl px-3 lg:px-10 flex flex-col">
+    <div className="lg:w-4xl  h-auto  lg:h-fit  border shadow-accent backdrop-blur-sm dark:bg-black/40 bg-white/40 shadow-inner rounded-4xl px-3 lg:px-10 flex flex-col">
       <div className="h-fit text-center  py-1.5 text-2xl">{title}</div>
       {thumbnails && thumbnails.length > 0 && (
         <div className="relative  border  w-full h-fit overflow-hidden rounded-b-none rounded-2xl lg:rounded-b-none shadow-lg">
@@ -90,14 +90,14 @@ export default function ProjectCard({
       <div className="py-4 px-2 text-lg"> {description}</div>
       <Separator className="dark:bg-white/30 bg-black/30" />
       <div className="flex justify-evenly  py-3">
-        {github_url && (
+        {github_url.trim() && (
           <ProjectCardButton
             link={github_url}
             icon={<SiGithub className="dark:text-white text-xl" />}
             text="Github"
           />
         )}
-        {deployment_url && (
+        {deployment_url?.trim() && (
           <ProjectCardButton
             link={deployment_url}
             icon={<Play className="dark:text-white text-xl" />}
