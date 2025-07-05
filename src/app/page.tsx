@@ -29,7 +29,7 @@ export default async function Home() {
             <h1 className="font-sans  font-semibold lg:text-[85px] flex justify-center sm:justify-normal text-3xl">
               Rishab Yadav
             </h1>
-            <h2 className="font-secondary md:text-4xl flex opacity-70 justify-center md:justify-normal mb-6">
+            <h2 className="ml-1 font-secondary md:text-4xl flex opacity-70 justify-center md:justify-normal mb-6">
               Full Stack Web Developer
             </h2>
 

@@ -9,6 +9,7 @@ import {
   RiTailwindCssFill,
 } from "react-icons/ri";
 import {
+  SiCss3,
   SiExpress,
   SiMongodb,
   SiMongoose,
@@ -29,9 +30,9 @@ const FEicons = [
   { name: "TypeScript", symbol: <SiTypescript /> },
   { name: "HTML", symbol: <RiHtml5Fill /> },
   { name: "Tailwind CSS", symbol: <RiTailwindCssFill /> },
-  { name: "CSS", symbol: <RiReactjsFill /> },
-  { name: "framer-motion", symbol: <FiFramer /> },
-  { name: "shadCN", symbol: <SiShadcnui /> },
+  { name: "CSS", symbol: <SiCss3 /> },
+  { name: "Framer-motion", symbol: <FiFramer /> },
+  { name: "ShadCN", symbol: <SiShadcnui /> },
 ];
 const BEicons = [
   { name: "Node.js", symbol: <RiNodejsFill /> },
