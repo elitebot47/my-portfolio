@@ -1,4 +1,5 @@
 import { FaGitAlt } from "react-icons/fa";
+import { FiFramer } from "react-icons/fi";
 import {
   RiHtml5Fill,
   RiJavascriptFill,
@@ -14,6 +15,7 @@ import {
   SiPostgresql,
   SiPrisma,
   SiReactquery,
+  SiShadcnui,
   SiSocketdotio,
   SiTypescript,
 } from "react-icons/si";
@@ -28,6 +30,8 @@ const FEicons = [
   { name: "HTML", symbol: <RiHtml5Fill /> },
   { name: "Tailwind CSS", symbol: <RiTailwindCssFill /> },
   { name: "CSS", symbol: <RiReactjsFill /> },
+  { name: "framer-motion", symbol: <FiFramer /> },
+  { name: "shadCN", symbol: <SiShadcnui /> },
 ];
 const BEicons = [
   { name: "Node.js", symbol: <RiNodejsFill /> },

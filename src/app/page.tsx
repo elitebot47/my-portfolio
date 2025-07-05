@@ -26,7 +26,7 @@ export default async function Home() {
           className={`md:flex-2 md:px-8 w-full px-3 md:justify-start flex-col h-full`}
         >
           <section id="intro" className="lg:px-2">
-            <h1 className="font-sans font-bold lg:text-7xl flex justify-center md:justify-normal text-3xl">
+            <h1 className="font-sans  font-semibold lg:text-[85px] flex justify-center sm:justify-normal text-3xl">
               Rishab Yadav
             </h1>
             <h2 className="font-secondary md:text-4xl flex opacity-70 justify-center md:justify-normal mb-6">
