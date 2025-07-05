@@ -3,41 +3,51 @@ import ScrollNavigation from "@/components/homePage/scroll-navbar";
 import Education from "@/components/homePage/text-content-side/education-section/education";
 import SkillsArea from "@/components/homePage/text-content-side/skill-section/skills";
 import SocialIconList from "@/components/homePage/text-content-side/social-icon-strip/social-icon-list";
+import Head from "next/head";
 
 export default async function Home() {
   return (
-    <div className="lg:flex  w-full justify-center lg:pl-80 lg:pr-48 px-2  mb-40 lg:mb-0 mt-14 lg:mt-36">
-      <aside className="fixed z-10 left-0 inset-y-80 ml-3  hidden lg:block ">
-        <ScrollNavigation />
-      </aside>
-      <div className="md:flex-1 mt-4 lg:sticky lg:top-24 flex w-full h-full">
-        <ProfilePictureArea />
-      </div>
-      <div
-        className={`md:flex-2 md:px-8 w-full px-3 md:justify-start flex-col h-full`}
-      >
-        <section id="intro" className="lg:px-2">
-          <div className="lg:text-6xl flex justify-center md:justify-normal text-3xl">
-            Rishab Yadav
-          </div>
-          <div className="md:text-4xl flex  justify-center md:justify-normal mb-6">
-            Full Stack Web Developer
-          </div>
+    <>
+      <Head>
+        <title>Rishab Yadav - Full Stack Web Developer</title>
+        <meta
+          name="description"
+          content="Portfolio of Rishab Yadav, a full-stack web developer specializing in Next.js and modern web technologies."
+        />
+      </Head>
+      <div className="lg:flex  w-full justify-center lg:pl-80 lg:pr-48 px-2  mb-40 lg:mb-0 mt-14 lg:mt-36">
+        <aside className="fixed z-10 left-0 inset-y-80 ml-3  hidden lg:block ">
+          <ScrollNavigation />
+        </aside>
+        <div className="md:flex-1 mt-4 lg:sticky lg:top-24 flex w-full h-full">
+          <ProfilePictureArea />
+        </div>
+        <div
+          className={`md:flex-2 md:px-8 w-full px-3 md:justify-start flex-col h-full`}
+        >
+          <section id="intro" className="lg:px-2">
+            <h1 className="font-sans font-bold lg:text-7xl flex justify-center md:justify-normal text-3xl">
+              Rishab Yadav
+            </h1>
+            <h2 className="font-secondary md:text-4xl flex opacity-70 justify-center md:justify-normal mb-6">
+              Full Stack Web Developer
+            </h2>
 
-          <SocialIconList />
-          <div className=" mt-8 mb-9 text-xl">
-            {`I'm a full-stack developer, and I love building cool stuff and trying
+            <SocialIconList />
+            <p className="font-sans mt-8 mb-9 text-xl">
+              {`I'm a full-stack developer, and I love building cool stuff and trying
           out new ideas. I've worked on a bunch of projects, and I have a little
           obsession with Next.js`}
-          </div>
-        </section>
-        <section id="skills">
-          <SkillsArea className=" bg-accent/20 backdrop-blur-lg shadow-inner shadow-black/15 dark:shadow-white/15 mb-6 border rounded-4xl  px-4 py-6" />
-        </section>
-        <section id="education">
-          <Education className=" bg-accent/20 backdrop-blur-lg shadow-inner shadow-black/15 dark:shadow-white/15 mb-6 border rounded-4xl  px-4 py-6" />
-        </section>
+            </p>
+          </section>
+          <section id="skills">
+            <SkillsArea className=" bg-accent/20 backdrop-blur-lg shadow-inner shadow-black/15 dark:shadow-white/15 mb-6 border rounded-4xl  px-4 py-6" />
+          </section>
+          <section id="education">
+            <Education className=" bg-accent/20 backdrop-blur-lg shadow-inner shadow-black/15 dark:shadow-white/15 mb-6 border rounded-4xl  px-4 py-6" />
+          </section>
+        </div>
       </div>
-    </div>
+    </>
   );
 }

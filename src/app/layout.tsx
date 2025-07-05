@@ -1,7 +1,22 @@
 import Navbar from "@/components/navbar/navbar";
 import type { Metadata } from "next";
 import { ThemeProvider as NextThemesProvider } from "next-themes";
+
+import { Montserrat, Roboto } from "next/font/google";
 import "./globals.css";
+
+const montserrat = Montserrat({
+  subsets: ["latin"],
+  display: "swap",
+  variable: "--font-montserrat",
+});
+
+const roboto = Roboto({
+  subsets: ["latin"],
+  weight: ["300", "400", "500", "700"],
+  display: "swap",
+  variable: "--font-roboto",
+});
 
 export const metadata: Metadata = {
   title: "Rishab Yadav",
@@ -14,8 +29,12 @@ export default async function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" suppressHydrationWarning>
-      <body className="antialiased">
+    <html
+      className={`${montserrat.variable} ${roboto.variable} `}
+      lang="en"
+      suppressHydrationWarning
+    >
+      <body className="font-sans">
         <NextThemesProvider
           attribute="class"
           defaultTheme="dark"
@@ -23,7 +42,7 @@ export default async function RootLayout({
           disableTransitionOnChange
         >
           <div className="relative min-h-screen  w-screen">
-            <nav className="fixed z-50 w-fit h-fit bottom-8 lg:top-8  left-1/2 -translate-x-1/2">
+            <nav className="fixed z-50 w-fit h-fit bottom-8 shadow-lg  rounded-full lg:top-8  left-1/2 -translate-x-1/2">
               <Navbar />
             </nav>
             <div className="fixed overflow-hidden inset-0 flex justify-center blur-3xl z-10 pointer-events-none">
