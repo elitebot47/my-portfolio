@@ -1,4 +1,3 @@
-import { title } from "process";
 import ProjectCard from "./project-card";
 interface ProjectProps {
   id?: number;
@@ -22,11 +21,11 @@ const projects = [
 
 export default async function ProjectList() {
   return (
-    <div>
+    <div className="w-full  flex flex-col items-center h-full">
       {projects.map((project: ProjectProps) => (
         <div key={project.id}>
           <ProjectCard
-            title={title}
+            title={project.title}
             description={project.description}
             thumbnail={project.thumbnail}
             github_url={project.github_url}
