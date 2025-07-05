@@ -6,8 +6,9 @@ interface ProjectProps {
   thumbnails: Array<string>;
   github_url: string;
   deployment_url: string;
+  stage: "Completed" | "Development" | "Beta" | "Archived";
 }
-const projects = [
+const projects: ProjectProps[] = [
   {
     id: 1,
     title: "DocWise",
@@ -16,6 +17,7 @@ const projects = [
     thumbnails: ["ub4txzzorfczfc5re8gh", "o5l2kpttqurmi8decjzl"],
     github_url: "https://github.com/elitebot47/DocWise",
     deployment_url: "https://doc-wise.vercel.app",
+    stage: "Completed",
   },
   {
     id: 2,
@@ -25,6 +27,27 @@ const projects = [
     thumbnails: ["kfznb7ntonqiculc9tli", "bkyhau7b4cbdvyvemkfz"],
     github_url: "https://github.com/elitebot47/EchoLine",
     deployment_url: "https://chat-app-roan-psi.vercel.app",
+    stage: "Beta",
+  },
+  {
+    id: 4,
+    title: "Personal Finance Tracker",
+    description:
+      "A robust and intuitive personal finance tracking application designed to help users manage transactions, track budgets.",
+    thumbnails: ["e6wuujoi8n8jn1adxnhe", "bhc5t4sfum1jk4t4myf7"],
+    github_url: "https://github.com/elitebot47/personal-finance-tracker",
+    deployment_url: "https://personal-finance-tracker-pied.vercel.app",
+    stage: "Beta",
+  },
+  {
+    id: 3,
+    title: "Wavybox",
+    description:
+      "A modern, real-time social media platform. Instantly share posts, follow users, and engage with a sleek, responsive interface.",
+    thumbnails: [],
+    github_url: "https://github.com/elitebot47/Wavybox",
+    deployment_url: "https://wavy-box.vercel.app/",
+    stage: "Development",
   },
 ];
 
@@ -39,6 +62,7 @@ export default async function ProjectList() {
             thumbnails={project.thumbnails}
             github_url={project.github_url}
             deployment_url={project.deployment_url}
+            stage={project.stage}
           />
         </div>
       ))}

@@ -41,18 +41,20 @@ export default function ProjectCard({
   thumbnails,
   github_url,
   deployment_url,
+  stage,
 }: {
   title: string;
   description: string;
   thumbnails?: Array<string>;
   github_url: string;
   deployment_url?: string;
+  stage: "Completed" | "Development" | "Beta" | "Archived";
 }) {
   return (
     <div className="lg:w-4xl h-auto  lg:h-fit  border shadow-accent backdrop-blur-sm dark:bg-black/40 bg-white/40 shadow-inner rounded-4xl px-3 lg:px-10 flex flex-col">
       <div className="h-fit text-center  py-1.5 text-2xl">{title}</div>
       {thumbnails && thumbnails.length > 0 && (
-        <div className="relative  border  w-full h-fit  rounded-lg lg:rounded-2xl shadow-lg">
+        <div className="relative  border  w-full h-fit overflow-hidden rounded-b-none rounded-2xl lg:rounded-b-none shadow-lg">
           <Carousel>
             <CarouselContent>
               {thumbnails.map((pic, index) => (
@@ -78,6 +80,13 @@ export default function ProjectCard({
           </Carousel>
         </div>
       )}
+      <div
+        className={`text-center bg-input/70 p-1 ${
+          thumbnails?.length === 0 ? " rounded-full" : "rounded-b-2xl"
+        }  `}
+      >
+        {stage}
+      </div>
       <div className="py-4 px-2 text-lg"> {description}</div>
       <Separator className="dark:bg-white/30 bg-black/30" />
       <div className="flex justify-evenly  py-3">
