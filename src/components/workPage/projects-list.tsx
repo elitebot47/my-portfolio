@@ -74,10 +74,7 @@ export default async function ProjectList() {
   return (
     <div className="w-full  flex flex-col gap-10 pb-28 items-center h-fit">
       {projects.map((project: ProjectProps) => (
-        <div
-          className="dark:shadow-lg shadow-sm w-full rounded-4xl"
-          key={project.id}
-        >
+        <div className=" w-full rounded-4xl" key={project.id}>
           <ProjectCard
             title={project.title}
             description={project.description}

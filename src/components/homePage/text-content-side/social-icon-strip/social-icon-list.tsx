@@ -1,9 +1,9 @@
 import { BsGithub, BsLinkedin, BsTwitterX } from "react-icons/bs";
 import SocialIconButton from "./social-icon-button";
 
-export default async function SocialIconList() {
+export default function SocialIconList() {
   return (
-    <div className=" w-full flex justify-center md:justify-normal gap-2 h-full">
+    <div className=" w-full flex my-7 lg:my-14 justify-center md:justify-normal gap-2 h-full">
       <SocialIconButton
         href="https://github.com/elitebot47"
         icon={<BsGithub />}

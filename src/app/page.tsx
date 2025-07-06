@@ -1,8 +1,8 @@
+import IntroArea from "@/components/homePage/intro-area";
 import ProfilePictureArea from "@/components/homePage/profile-picture-side/profile-picture-area";
 import ScrollNavigation from "@/components/homePage/scroll-navbar";
 import Education from "@/components/homePage/text-content-side/education-section/education";
 import SkillsArea from "@/components/homePage/text-content-side/skill-section/skills";
-import SocialIconList from "@/components/homePage/text-content-side/social-icon-strip/social-icon-list";
 import Head from "next/head";
 
 export default async function Home() {
@@ -26,19 +26,7 @@ export default async function Home() {
           className={`md:flex-2 md:px-8 w-full px-3 md:justify-start flex-col h-full`}
         >
           <section id="intro" className="lg:px-2">
-            <h1 className="font-sans  font-semibold lg:text-[85px] flex justify-center sm:justify-normal text-3xl">
-              Rishab Yadav
-            </h1>
-            <h2 className="ml-1 font-secondary md:text-4xl flex opacity-70 justify-center md:justify-normal mb-6">
-              Full Stack Web Developer
-            </h2>
-
-            <SocialIconList />
-            <p className="font-sans mt-8 mb-9 text-xl">
-              {`I'm a full-stack developer, and I love building cool stuff and trying
-          out new ideas. I've worked on a bunch of projects, and I have a little
-          obsession with Next.js`}
-            </p>
+            <IntroArea />
           </section>
           <section id="skills">
             <SkillsArea className=" bg-accent/20 backdrop-blur-lg shadow-inner shadow-black/15 dark:shadow-white/15 mb-6 border rounded-4xl  px-4 py-6" />

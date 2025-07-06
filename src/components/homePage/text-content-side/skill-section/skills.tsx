@@ -1,3 +1,6 @@
+"use client";
+
+import { motion } from "motion/react";
 import { FaGitAlt } from "react-icons/fa";
 import { FiFramer } from "react-icons/fi";
 import {
@@ -81,15 +84,16 @@ function SkillColumn({
   );
 }
 
-export default async function SkillsArea({
-  className,
-}: {
-  className?: string;
-}) {
+export default function SkillsArea({ className }: { className?: string }) {
   return (
-    <div className={`${className} `}>
-      <div className="text-4xl text-center lg:text-start mb-4">
-        Technical skills
+    <motion.div
+      initial={{ filter: "blur(10px)", opacity: 0 }}
+      animate={{ filter: "blur(0px)", opacity: 1 }}
+      transition={{ duration: 1, ease: "easeOut" }}
+      className={`${className} `}
+    >
+      <div className="text-4xl text-center lg:text-start mb-4 font-semibold">
+        Skills
       </div>
       <div className="flex flex-col gap-5">
         <SkillColumn heading="Front-End Development" iconsArray={FEicons} />
@@ -105,6 +109,6 @@ export default async function SkillsArea({
         />
         <SkillColumn heading="Tools & Technologies" iconsArray={TOOLSicons} />
       </div>
-    </div>
+    </motion.div>
   );
 }

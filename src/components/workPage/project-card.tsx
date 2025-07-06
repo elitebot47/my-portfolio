@@ -8,6 +8,7 @@ import {
   CarouselPrevious,
 } from "@/components/ui/carousel";
 import { Play } from "lucide-react";
+import { motion } from "motion/react";
 import { CldImage } from "next-cloudinary";
 import Link from "next/link";
 import React from "react";
@@ -51,7 +52,13 @@ export default function ProjectCard({
   stage: "Completed" | "Development" | "Beta" | "Archived";
 }) {
   return (
-    <div className="lg:w-4xl  h-auto  lg:h-fit  border shadow-accent backdrop-blur-sm dark:bg-black/40 bg-white/40 shadow-inner rounded-4xl px-3 lg:px-10 flex flex-col">
+    <motion.div
+      initial={{ filter: "blur(5px)", y: 100, opacity: 0 }}
+      whileInView={{ filter: "blur(0px)", y: 0, opacity: 1 }}
+      transition={{ duration: 1, ease: "easeOut", delay: 0 }}
+      viewport={{ once: true, amount: 0.1 }}
+      className="lg:w-4xl  h-auto  lg:h-fit   border shadow-gray-300/50 backdrop-blur-sm dark:bg-black/40 bg-white/40 shadow-inner rounded-4xl px-3 lg:px-10 flex flex-col"
+    >
       <div className="h-fit text-center  py-1.5 text-2xl">{title}</div>
       {thumbnails && thumbnails.length > 0 && (
         <div className="relative  border  w-full h-fit overflow-hidden rounded-b-none rounded-2xl lg:rounded-b-none shadow-lg">
@@ -105,6 +112,6 @@ export default function ProjectCard({
           />
         )}
       </div>
-    </div>
+    </motion.div>
   );
 }
