@@ -10,7 +10,7 @@ export default async function Navbar() {
     >
       <NavbarButton href="/" icon={<HomeIcon />} />
       <Separator
-        className=" dark:bg-white/30 bg-black/30 mx-1 lg:mx-1.5"
+        className="!h-8 my-auto dark:bg-white/30 bg-black/30 mx-1 lg:mx-1.5"
         orientation="vertical"
       />
       <NavbarButton
@@ -21,7 +21,7 @@ export default async function Navbar() {
       />
       <NavbarButton href="/contact" text="Contact" icon={<Phone />} />
       <Separator
-        className="dark:bg-white/30 bg-black/30 lg:mx-1.5 mx-1"
+        className="!h-8 my-auto dark:bg-white/30 bg-black/30 lg:mx-1.5 mx-1"
         orientation="vertical"
       />
       <ModeToggle />
