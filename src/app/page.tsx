@@ -19,8 +19,10 @@ export default async function Home() {
         <aside className="fixed z-10 left-0 inset-y-80 ml-3  hidden lg:block ">
           <ScrollNavigation />
         </aside>
-        <div className="md:flex-1 mt-4 lg:sticky lg:top-24 flex w-full h-full">
-          <ProfilePictureArea />
+        <div className="md:flex-1 mt-4">
+          <div className="lg:sticky lg:top-24">
+            <ProfilePictureArea />
+          </div>
         </div>
         <div
           className={`md:flex-2 md:px-8 w-full px-3 md:justify-start flex-col h-full`}

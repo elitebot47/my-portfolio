@@ -6,9 +6,11 @@ export default function ScrollNavigation() {
     const href = e.currentTarget.href;
     const targetId = href.replace(/.*#/, "");
     const elem = document.getElementById(targetId);
-    elem?.scrollIntoView({
-      behavior: "smooth",
-    });
+    if (elem) {
+      const yOffset = -96;
+      const y = elem.getBoundingClientRect().top + window.pageYOffset + yOffset;
+      window.scrollTo({ top: y, behavior: "smooth" });
+    }
   };
 
   return (
