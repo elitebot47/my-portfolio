@@ -24,7 +24,7 @@ function ProjectCardButton({
 }) {
   return (
     <Link
-      className="flex  items-center rounded-full py-2 px-3 duration-500 border dark:border-2 dark:border-accent  border-gray-400 hover:shadow-lg dark:hover:shadow-white/10 hover:shadow-black/10   hover:bg-secondary transition-colors"
+      className="flex  items-center rounded-full py-2 px-3 duration-500 border dark:border-2 dark:border-accent  border-gray-400 hover:shadow-lg transition-all  dark:hover:shadow-white/10 hover:shadow-black/10   hover:bg-secondary "
       href={link}
       target="_blank"
       rel="noopener noreferrer"
