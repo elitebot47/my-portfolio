@@ -1,4 +1,5 @@
 import Navbar from "@/components/navbar/navbar";
+import { Analytics } from "@vercel/analytics/next";
 import type { Metadata } from "next";
 import { ThemeProvider as NextThemesProvider } from "next-themes";
 
@@ -57,6 +58,7 @@ export default async function RootLayout({
             </footer>
           </div>
         </NextThemesProvider>
+        <Analytics />;
       </body>
     </html>
   );
