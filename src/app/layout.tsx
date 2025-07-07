@@ -58,7 +58,7 @@ export default async function RootLayout({
             </footer>
           </div>
         </NextThemesProvider>
-        <Analytics />;
+        <Analytics />
       </body>
     </html>
   );
