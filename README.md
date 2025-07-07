@@ -11,7 +11,6 @@ This repository contains the source code for my personal portfolio website. It i
 - [Contact](#contact)
 - [Contributions](#contributions)
 
-
 ## About
 
 This portfolio is a personal project designed to demonstrate my skills and projects in web development. It includes a selection of my work, along with descriptions and links to live demos where applicable.
@@ -37,8 +36,8 @@ This project is licensed under the [MIT License](LICENSE).
 Feel free to reach out if you have any questions or feedback reagarding this portfolio website!
 
 - **Email:** feedback@rishabyadav.com
-- **LinkedIn:** [Your LinkedIn Profile](https://www.linkedin.com/in/rishab-yadav-9785b5228)
-- **GitHub:** [Your GitHub Profile](https://github.com/elitebot47)
+- **LinkedIn:** [https://www.linkedin.com/in/rishab-yadav-9785b5228](https://www.linkedin.com/in/rishab-yadav-9785b5228)
+- **GitHub:** [https://github.com/elitebot47](https://github.com/elitebot47)
 
 ## Contributions
 
