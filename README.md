@@ -36,8 +36,8 @@ This project is licensed under the [MIT License](LICENSE).
 Feel free to reach out if you have any questions or feedback reagarding this portfolio website!
 
 - **Email:** feedback@rishabyadav.com
-- **LinkedIn:** [https://www.linkedin.com/in/rishab-yadav-9785b5228](https://www.linkedin.com/in/rishab-yadav-9785b5228)
-- **GitHub:** [https://github.com/elitebot47](https://github.com/elitebot47)
+- **LinkedIn:** [https://www.linkedin.com/in/rishabyadav-dev](https://www.linkedin.com/in/rishabyadav-dev)
+- **GitHub:** [https://github.com/rishabyadav-dev](https://github.com/rishabyadav-dev)
 
 ## Contributions
 

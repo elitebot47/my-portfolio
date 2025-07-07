@@ -6,12 +6,12 @@ export default function SocialIconList() {
   return (
     <div className=" w-full flex my-6 lg:my-14 justify-center md:justify-normal lg:gap-2 gap-3 h-full">
       <SocialIconButton
-        href="https://github.com/elitebot47"
+        href="https://github.com/rishabyadav-dev"
         icon={<BsGithub />}
         text="Github"
       />
       <SocialIconButton
-        href="https://www.linkedin.com/in/rishab-yadav-9785b5228"
+        href="https://www.linkedin.com/in/rishabyadav-dev"
         icon={<BsLinkedin />}
         text="Linkedin"
       />

@@ -40,7 +40,7 @@ export default function ContactProfilesCard() {
         />
         <SocialIconButton
           className="lg:scale-100 scale-110"
-          href="https://www.linkedin.com/in/rishab-yadav-9785b5228/"
+          href="https://www.linkedin.com/in/rishabyadav-dev/"
           icon={<BsLinkedin />}
           text="Linkedin"
         />

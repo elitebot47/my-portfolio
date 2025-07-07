@@ -15,7 +15,7 @@ const projects: ProjectProps[] = [
     description:
       "An intelligent chat application that allows you to have conversations about your PDF documents. Upload a PDF and start asking questions!",
     thumbnails: ["ub4txzzorfczfc5re8gh", "o5l2kpttqurmi8decjzl"],
-    github_url: "https://github.com/elitebot47/DocWise",
+    github_url: "https://github.com/rishabyadav-dev/DocWise",
     deployment_url: "https://doc-wise.vercel.app",
     stage: "Completed",
   },
@@ -25,7 +25,7 @@ const projects: ProjectProps[] = [
     description:
       "Real-time messaging app with WebSocket communication, file uploads, and notification system. Modern full-stack implementation.",
     thumbnails: ["kfznb7ntonqiculc9tli", "bkyhau7b4cbdvyvemkfz"],
-    github_url: "https://github.com/elitebot47/EchoLine",
+    github_url: "https://github.com/rishabyadav-dev/EchoLine",
     deployment_url: "https://chat-app-roan-psi.vercel.app",
     stage: "Beta",
   },
@@ -35,7 +35,7 @@ const projects: ProjectProps[] = [
     description:
       "A robust and intuitive personal finance tracking application designed to help users manage transactions, track budgets.",
     thumbnails: ["e6wuujoi8n8jn1adxnhe", "bhc5t4sfum1jk4t4myf7"],
-    github_url: "https://github.com/elitebot47/personal-finance-tracker",
+    github_url: "https://github.com/rishabyadav-dev/personal-finance-tracker",
     deployment_url: "https://personal-finance-tracker-pied.vercel.app",
     stage: "Beta",
   },
@@ -45,7 +45,7 @@ const projects: ProjectProps[] = [
     description:
       "A modern, real-time social media platform. Instantly share posts, follow users, and engage with a sleek, responsive interface.",
     thumbnails: [],
-    github_url: "https://github.com/elitebot47/Wavybox",
+    github_url: "https://github.com/rishabyadav-dev/Wavybox",
     deployment_url: "https://wavy-box.vercel.app/",
     stage: "Development",
   },
@@ -55,7 +55,7 @@ const projects: ProjectProps[] = [
     description:
       "A minimalist, Google Keep-inspired note-taking app. Create, organize, and retrieve notes & to-dos effortlessly with a clean, responsive interface.",
     thumbnails: [],
-    github_url: "https://github.com/elitebot47/Notely",
+    github_url: "https://github.com/rishabyadav-dev/Notely",
     deployment_url: "",
     stage: "Archived",
   },
@@ -64,7 +64,7 @@ const projects: ProjectProps[] = [
     title: "This portfolio ",
     description: "",
     thumbnails: [],
-    github_url: "https://github.com/elitebot47/my-portfolio",
+    github_url: "https://github.com/rishabyadav-dev/my-portfolio",
     deployment_url: "",
     stage: "Beta",
   },

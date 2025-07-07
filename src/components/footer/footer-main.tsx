@@ -11,7 +11,7 @@ export default function Footer() {
           aria-label="Rishab Yadav on LinkedIn"
           target="_blank"
           rel="noopener noreferrer"
-          href="https://www.linkedin.com/in/rishab-yadav-9785b5228"
+          href="https://www.linkedin.com/in/rishabyadav-dev"
           className="font-semibold duration-300 hover:text-blue-300 hover:shadow-lg transition align-middle"
         >
           Rishab Yadav
