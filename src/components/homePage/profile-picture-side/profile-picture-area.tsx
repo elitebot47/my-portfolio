@@ -10,15 +10,15 @@ export default function ProfilePictureArea() {
       transition={{ duration: 1, ease: "easeOut" }}
       className="h-full lg:pl-12 w-full flex-col flex justify-center items-center"
     >
-      <div className="w-[170px] border-2 flex justify-center items-center rounded-full h-[170px] ">
+      <div className="w-[170px] border-2 flex justify-center items-center rounded-full h-[170px] overflow-hidden">
         <CldImage
           alt="profile picture"
           width={1000}
           height={1000}
-          src="dotwvanej85ajcmz4c8c"
+          src="ihrnwy6eepwn2rx3wktq"
           crop="auto"
-          gravity="north_east"
-          style={{ borderRadius: "50%" }}
+          gravity="face"
+          className="w-full h-full object-cover transition-transform duration-300 ease-in-out scale-150"
         />
       </div>
 

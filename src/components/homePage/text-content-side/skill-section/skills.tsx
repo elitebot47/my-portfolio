@@ -87,9 +87,10 @@ function SkillColumn({
 export default function SkillsArea({ className }: { className?: string }) {
   return (
     <motion.div
-      initial={{ filter: "blur(10px)", opacity: 0 }}
-      animate={{ filter: "blur(0px)", opacity: 1 }}
-      transition={{ duration: 1, ease: "easeOut" }}
+      initial={{ filter: "blur(5px)", y: 100, opacity: 0 }}
+      whileInView={{ filter: "blur(0px)", y: 0, opacity: 1 }}
+      transition={{ duration: 1, ease: "easeOut", delay: 0 }}
+      viewport={{ once: true, amount: 0.1 }}
       className={`${className} `}
     >
       <div className="text-4xl text-center lg:text-start mb-4 font-semibold">

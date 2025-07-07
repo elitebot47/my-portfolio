@@ -15,12 +15,12 @@ export default function ContactProfilesCard() {
         filter: "blur(10px)",
       }}
       animate={{ scale: 1, opacity: 1, filter: "blur(0px)" }}
-      className={`font-mono  bg-accent/60 w-full p-6 rounded-2xl shadow-lg dark:shadow-white/10 shadow-black/20   h-fit`}
+      className={`font-mono  bg-accent/10 w-full p-6 rounded-2xl shadow-lg dark:shadow-white/10 shadow-black/20   h-fit`}
     >
       <h1 className=" lg:text-xl text-[16px] lg:text-start text-center font-extralight">
-        We create beautiful, organized websites and web applications that
-        empower you with full ownership and easy maintenance.
-        <div className="text-foreground/60">Reach out to learn more.</div>
+        I create beautiful, organized websites and web applications that empower
+        you with full ownership and easy maintenance.
+        <div className="text-foreground/60 mt-6">Reach out to learn more.</div>
       </h1>
       <h2 className="lg:text-lg text-sm mt-6">
         {`Email: `}

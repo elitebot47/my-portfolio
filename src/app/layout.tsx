@@ -49,10 +49,10 @@ export default async function RootLayout({
             <div className="fixed  inset-0 flex justify-center blur-3xl z-10 pointer-events-none">
               <div className="h-full bg-gradient-blue-to-white-inverted dark:bg-gradient-blue-to-black-inverted lg:bg-gradient-blue-to-white lg:dark:bg-gradient-blue-to-black w-full mx-auto flex"></div>
             </div>
-            <main className="flex-grow z-20   scrollbar-none bg-white/30 dark:bg-black/30">
+            <main className="flex-grow z-20 pb-16   scrollbar-none bg-white/30 dark:bg-black/30">
               {children}
             </main>
-            <footer className="z-20 h-fit w-full">
+            <footer className="z-20  h-fit w-full">
               <Footer />
             </footer>
           </div>

@@ -1,8 +1,16 @@
+"use client";
 import { Separator } from "@/components/ui/separator";
+import { motion } from "motion/react";
 
-export default async function Education({ className }: { className?: string }) {
+export default function Education({ className }: { className?: string }) {
   return (
-    <div className={`${className} `}>
+    <motion.div
+      initial={{ filter: "blur(5px)", y: 100, opacity: 0 }}
+      whileInView={{ filter: "blur(0px)", y: 0, opacity: 1 }}
+      transition={{ duration: 1, ease: "easeOut", delay: 0 }}
+      viewport={{ once: true, amount: 0.1 }}
+      className={`${className} `}
+    >
       <h2 className="lg:text-4xl text-2xl justify-center flex lg:block mb-3.5">
         Education
       </h2>
@@ -18,6 +26,6 @@ export default async function Education({ className }: { className?: string }) {
           Btech
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 }
