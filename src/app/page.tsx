@@ -32,7 +32,7 @@ export default async function Home() {
             <CalButton />
           </div>
           <section id="intro" className="lg:px-2">
-            <IntroArea className="mb-20" />
+            <IntroArea className="lg:mb-24 mb-10" />
           </section>
           <section className="" id="skills">
             <SkillsArea className=" bg-accent/20 backdrop-blur-lg shadow-inner shadow-black/15 dark:shadow-white/15 mb-6 border rounded-4xl  px-4 py-6" />

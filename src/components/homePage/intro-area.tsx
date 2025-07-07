@@ -19,7 +19,7 @@ export default function IntroArea({ className }: { className?: string }) {
       </h2>
 
       <SocialIconList />
-      <p className="font-sans  lg:text-start text-center mb-9 text-xl">
+      <p className="font-sans  lg:text-start text-center mb-6 text-xl">
         {`I love building cool stuff and experimenting with new ideas. I've worked on a variety of projects and have a bit of an obsession with Next.js.`}
       </p>
     </motion.div>

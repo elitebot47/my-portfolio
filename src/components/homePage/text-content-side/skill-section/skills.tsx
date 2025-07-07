@@ -73,8 +73,8 @@ function SkillColumn({
   heading: string;
 }) {
   return (
-    <div>
-      <div className="text-2xl  text-center mb-1.5 lg:text-start">
+    <div className="mb-1">
+      <div className="lg:text-2xl  text-xl text-center mb-1.5 lg:text-start">
         {heading}
       </div>
       <div className="flex justify-center mt-0.5 md:justify-start flex-wrap gap-1.5">
@@ -89,10 +89,10 @@ function SkillColumn({
 export default function SkillsArea({ className }: { className?: string }) {
   return (
     <motion.div
-      initial={{ filter: "blur(5px)", y: 100, opacity: 0 }}
+      initial={{ filter: "blur(5px)", y: 70, opacity: 0 }}
       whileInView={{ filter: "blur(0px)", y: 0, opacity: 1 }}
       transition={{ duration: 1, ease: "easeOut", delay: 0 }}
-      viewport={{ once: true, amount: 0.1 }}
+      viewport={{ once: true, amount: 0.01 }}
       className={`${className} `}
     >
       <h1 className="text-3xl text-center lg:text-start mb-4 font-bold">

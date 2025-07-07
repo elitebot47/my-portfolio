@@ -10,7 +10,7 @@ export default function CalButton() {
     (async function () {
       const cal = await getCalApi();
       cal("ui", {
-        theme: "dark",
+        theme: "auto",
         styles: {
           branding: { brandColor: "#000000" },
         },
@@ -26,8 +26,6 @@ export default function CalButton() {
       transition={{
         duration: 1,
         ease: "easeOut",
-        stiffness: 400,
-        damping: 17,
       }}
       data-cal-link="rishabyadav-dev"
       className="cursor-pointer 
@@ -41,8 +39,8 @@ export default function CalButton() {
                  hover:px-5 
                  dark:hover:bg-accent/50 hover:bg-foreground/60"
     >
-      <CalendarRange />
-      <div className="  place-content-center">Schedule a call</div>
+      <CalendarRange className="pointer-events-none" />
+      Schedule a call
     </motion.button>
   );
 }

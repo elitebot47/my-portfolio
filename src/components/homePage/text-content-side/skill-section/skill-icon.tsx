@@ -13,11 +13,11 @@ export default function SkillIcon({ name, className, icon }: SkillIconProps) {
     <Badge
       className={clsx(
         className,
-        "flex justify-center items-center gap-2 px-2 w-fit h-7"
+        "flex justify-center bg-white dark:bg-black/80 items-center gap-2 px-2 w-fit h-7"
       )}
-      variant="default"
+      variant="outline"
     >
-      <div className="text-sm    text-center">{name}</div>
+      <div className="text-sm text-center">{name}</div>
       {icon && <div className="scale-150 w-3 text-center h-3">{icon}</div>}
     </Badge>
   );

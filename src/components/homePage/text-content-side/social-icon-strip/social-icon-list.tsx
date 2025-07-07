@@ -16,7 +16,7 @@ export default function SocialIconList() {
         text="Linkedin"
       />
       <SocialIconButton
-        href="https://x.com"
+        href="https://x.com/rishabyadav_dev"
         icon={<BsTwitterX />}
         text="Twitter"
       />
