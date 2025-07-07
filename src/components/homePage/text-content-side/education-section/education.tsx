@@ -11,9 +11,9 @@ export default function Education({ className }: { className?: string }) {
       viewport={{ once: true, amount: 0.1 }}
       className={`${className} `}
     >
-      <h2 className="lg:text-4xl text-2xl justify-center flex lg:block mb-3.5">
+      <h1 className="text-3xl text-center lg:text-start mb-4 font-bold">
         Education
-      </h2>
+      </h1>
       <div className="lg:h-24 dark:bg-white/10  bg-black/10 backdrop-blur-sm shadow-inner shadow-black/15 dark:shadow-white/15 rounded-2xl lg:p-3.5 p-2 py-1  w-full">
         <div className="flex justify-between h-10 items-center">
           <div className="lg:text-2xl text-[15px]">The NorthCap University</div>

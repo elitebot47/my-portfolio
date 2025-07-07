@@ -74,7 +74,9 @@ function SkillColumn({
 }) {
   return (
     <div>
-      <div className="text-2xl  text-center lg:text-start">{heading}</div>
+      <div className="text-2xl  text-center mb-1.5 lg:text-start">
+        {heading}
+      </div>
       <div className="flex justify-center mt-0.5 md:justify-start flex-wrap gap-1.5">
         {iconsArray.map((icon) => (
           <SkillIcon name={icon.name} icon={icon.symbol} key={icon.name} />
@@ -93,9 +95,9 @@ export default function SkillsArea({ className }: { className?: string }) {
       viewport={{ once: true, amount: 0.1 }}
       className={`${className} `}
     >
-      <div className="text-4xl text-center lg:text-start mb-4 font-semibold">
+      <h1 className="text-3xl text-center lg:text-start mb-4 font-bold">
         Skills
-      </div>
+      </h1>
       <div className="flex flex-col gap-5">
         <SkillColumn heading="Front-End Development" iconsArray={FEicons} />
         <SkillColumn heading="Back-End Development" iconsArray={BEicons} />

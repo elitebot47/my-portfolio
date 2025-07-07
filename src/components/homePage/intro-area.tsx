@@ -3,9 +3,10 @@
 import { motion } from "motion/react";
 import SocialIconList from "./text-content-side/social-icon-strip/social-icon-list";
 
-export default function IntroArea() {
+export default function IntroArea({ className }: { className?: string }) {
   return (
     <motion.div
+      className={`${className}`}
       initial={{ filter: "blur(10px)", opacity: 0 }}
       animate={{ filter: "blur(0px)", opacity: 1 }}
       transition={{ duration: 1, ease: "easeOut" }}

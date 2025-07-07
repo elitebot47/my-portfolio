@@ -1,11 +1,16 @@
+"use client";
 import { Briefcase, HomeIcon, Phone } from "lucide-react";
+import { motion } from "motion/react";
 import { Separator } from "../ui/separator";
 import { ModeToggle } from "./ModeToggle";
 import NavbarButton from "./navbarButton";
 
-export default async function Navbar() {
+export default function Navbar() {
   return (
-    <div
+    <motion.div
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{ duration: 1.2 }}
       className={` max-w-xs shadow-inner dark:shadow-white/20 shadow-black/10  backdrop-blur-lg  rounded-full lg:h-12 h-[51px] flex dark:bg-black/70 bg-white/70 p-1 `}
     >
       <NavbarButton href="/" icon={<HomeIcon />} />
@@ -25,6 +30,6 @@ export default async function Navbar() {
         orientation="vertical"
       />
       <ModeToggle />
-    </div>
+    </motion.div>
   );
 }
