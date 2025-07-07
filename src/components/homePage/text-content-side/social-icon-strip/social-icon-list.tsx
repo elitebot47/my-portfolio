@@ -4,7 +4,7 @@ import SocialIconButton from "./social-icon-button";
 
 export default function SocialIconList() {
   return (
-    <div className=" w-full flex my-7 lg:my-14 justify-center md:justify-normal lg:gap-2 gap-3 h-full">
+    <div className=" w-full flex my-6 lg:my-14 justify-center md:justify-normal lg:gap-2 gap-3 h-full">
       <SocialIconButton
         href="https://github.com/elitebot47"
         icon={<BsGithub />}

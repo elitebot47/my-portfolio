@@ -8,7 +8,7 @@ export default function ProfilePictureArea() {
       initial={{ filter: "blur(10px)", y: -20, opacity: 0 }}
       animate={{ filter: "blur(0px)", y: 0, opacity: 1 }}
       transition={{ duration: 1, ease: "easeOut" }}
-      className="h-full lg:pl-12 w-full flex-col flex justify-center items-center"
+      className="h-full lg:pl-12 mb-1 w-full flex-col flex justify-center items-center"
     >
       <div className="w-[170px] border-2 flex justify-center items-center rounded-full h-[170px] overflow-hidden">
         <CldImage

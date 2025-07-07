@@ -1,3 +1,4 @@
+import CalButton from "@/components/cal-button/cal-button";
 import IntroArea from "@/components/homePage/intro-area";
 import ProfilePictureArea from "@/components/homePage/profile-picture-side/profile-picture-area";
 import ScrollNavigation from "@/components/homePage/scroll-navbar";
@@ -27,6 +28,9 @@ export default async function Home() {
         <div
           className={`md:flex-2 md:px-8 w-full px-3 md:justify-start flex-col h-full`}
         >
+          <div className="lg:ml-2 flex justify-center  lg:justify-start">
+            <CalButton />
+          </div>
           <section id="intro" className="lg:px-2">
             <IntroArea className="mb-20" />
           </section>
