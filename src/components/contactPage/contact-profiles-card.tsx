@@ -8,13 +8,15 @@ import SocialIconButton from "../homePage/text-content-side/social-icon-strip/so
 export default function ContactProfilesCard() {
   return (
     <motion.div
-      transition={{ duration: 0.5, ease: "easeOut" }}
+      transition={{ duration: 0.8, ease: "easeOut" }}
       initial={{
-        scale: 0.9,
         opacity: 0,
         filter: "blur(10px)",
       }}
-      animate={{ scale: 1, opacity: 1, filter: "blur(0px)" }}
+      animate={{
+        opacity: 1,
+        filter: "blur(0px)",
+      }}
       className={`font-mono  bg-accent/10 w-full p-6 rounded-2xl shadow-lg dark:shadow-white/10 shadow-black/20   h-fit`}
     >
       <h1 className=" lg:text-xl text-[16px] lg:text-start text-center font-extralight">

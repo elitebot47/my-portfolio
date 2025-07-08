@@ -7,8 +7,8 @@ export default function IntroArea({ className }: { className?: string }) {
   return (
     <motion.div
       className={`${className}`}
-      initial={{ filter: "blur(10px)", opacity: 0 }}
-      animate={{ filter: "blur(0px)", opacity: 1 }}
+      initial={{ filter: "blur(10px)", y: 50, opacity: 0 }}
+      animate={{ filter: "blur(0px)", y: 0, opacity: 1 }}
       transition={{ duration: 1, ease: "easeOut" }}
     >
       <h1 className="leading-none font-sans lg:mt-4 mt-4  font-semibold lg:text-[85px] flex justify-center sm:justify-normal text-[40px]">

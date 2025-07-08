@@ -5,10 +5,9 @@ import { motion } from "motion/react";
 export default function Education({ className }: { className?: string }) {
   return (
     <motion.div
-      initial={{ filter: "blur(5px)", y: 100, opacity: 0 }}
-      whileInView={{ filter: "blur(0px)", y: 0, opacity: 1 }}
-      transition={{ duration: 1, ease: "easeOut", delay: 0 }}
-      viewport={{ once: true, amount: 0.1 }}
+      initial={{ filter: "blur(10px)", y: 50, opacity: 0 }}
+      animate={{ filter: "blur(0px)", y: 0, opacity: 1 }}
+      transition={{ duration: 1, ease: "easeOut" }}
       className={`${className} `}
     >
       <h1 className="text-3xl text-center lg:text-start mb-4 font-bold">
