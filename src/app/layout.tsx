@@ -22,6 +22,9 @@ const roboto = Roboto({
 });
 
 export const metadata: Metadata = {
+  icons: {
+    icon: "/favicon.ico", 
+  },
   title: "Rishab Yadav | Full Stack Web Developer",
   description:
     "Rishab Yadav's portfolio showcases modern web applications built with Next.js, TypeScript, React,  and more. Explore my projects and skills!",
