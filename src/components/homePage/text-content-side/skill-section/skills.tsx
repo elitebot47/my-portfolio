@@ -61,23 +61,27 @@ const TOOLSicons = [
   { name: "VS Code", symbol: <VscVscode /> },
 ];
 
-function SkillColumn({
+export function SkillColumn({
   iconsArray,
   heading,
+  className,
 }: {
   iconsArray: {
     name: string;
     className?: string;
     symbol?: React.ReactNode;
   }[];
-  heading: string;
+  heading?: string;
+  className?: string;
 }) {
   return (
     <div className="mb-1">
       <div className="lg:text-2xl  text-xl text-center mb-1.5 lg:text-start">
         {heading}
       </div>
-      <div className="flex justify-center mt-0.5 md:justify-start flex-wrap gap-1.5">
+      <div
+        className={`${className} flex justify-center mt-0.5 md:justify-start flex-wrap gap-1.5`}
+      >
         {iconsArray.map((icon) => (
           <SkillIcon name={icon.name} icon={icon.symbol} key={icon.name} />
         ))}

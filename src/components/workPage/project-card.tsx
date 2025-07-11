@@ -14,6 +14,8 @@ import Link from "next/link";
 import React from "react";
 import { SiGithub } from "react-icons/si";
 import { Separator } from "../ui/separator";
+import { SkillColumn } from "../homePage/text-content-side/skill-section/skills";
+
 function ProjectCardButton({
   link,
   icon,
@@ -43,6 +45,7 @@ export default function ProjectCard({
   github_url,
   deployment_url,
   stage,
+  techUsed,
 }: {
   title: string;
   description: string;
@@ -50,6 +53,7 @@ export default function ProjectCard({
   github_url: string;
   deployment_url?: string;
   stage: "Completed" | "Development" | "Beta" | "Archived";
+  techUsed: { name: string; symbol?: React.ReactNode }[];
 }) {
   return (
     <motion.div
@@ -94,7 +98,18 @@ export default function ProjectCard({
       >
         {stage}
       </div>
-      <div className="py-4 px-2 text-lg"> {description}</div>
+      <div className="py-2 lg:py-3 text-center px-2 text-lg ">
+        {description}
+      </div>
+      <Separator className="dark:bg-white/30 bg-black/30" />
+      {techUsed.length > 0 && (
+        <div className={`text-center  py-1.5`}>
+          <SkillColumn
+            className={`  !justify-center !gap-1.5`}
+            iconsArray={techUsed}
+          />
+        </div>
+      )}
       <Separator className="dark:bg-white/30 bg-black/30" />
       <div className="flex justify-evenly  py-3">
         {github_url.trim() && (
@@ -104,6 +119,7 @@ export default function ProjectCard({
             text="Github"
           />
         )}
+
         {deployment_url?.trim() && (
           <ProjectCardButton
             link={deployment_url}
