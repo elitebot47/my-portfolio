@@ -2,7 +2,7 @@ import ProjectList from "@/components/workPage/projects-list";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Rishab Yadav | My Projects & Work",
+  title: "Work | Rishab Yadav",
   description:
     "Explore the modern web applications and projects built by Rishab Yadav, showcasing expertise in Next.js, TypeScript, React, and more.",
 };

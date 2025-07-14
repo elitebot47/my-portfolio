@@ -2,7 +2,7 @@ import ContactProfilesCard from "@/components/contactPage/contact-profiles-card"
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Contact Rishab Yadav | Reach Out for Collaborations",
+  title: "Contact | Rishab Yadav",
   description:
     "Connect with Rishab Yadav, a Full Stack Web Developer. Find contact information for inquiries, collaborations, and more.",
 };
