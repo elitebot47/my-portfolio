@@ -45,7 +45,11 @@ const projects: ProjectProps[] = [
     title: "DocWise",
     description:
       "An intelligent chat application that allows you to have conversations about your PDF documents. Upload a PDF and start asking questions!",
-    thumbnails: ["ub4txzzorfczfc5re8gh", "o5l2kpttqurmi8decjzl"],
+    thumbnails: [
+      "cgihtmznyms2vl1ajl0t",
+      "b9ctk2uatvdnvtra685m",
+      "d7f2kiir8tlqodqcf9tk",
+    ],
     github_url: "https://github.com/rishabyadav-dev/DocWise",
     deployment_url: "https://doc-wise.vercel.app",
     stage: "Completed",
