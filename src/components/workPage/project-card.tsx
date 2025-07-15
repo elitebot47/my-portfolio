@@ -57,15 +57,15 @@ export default function ProjectCard({
 }) {
   return (
     <motion.div
-      initial={{ filter: "blur(5px)", y: 100, opacity: 0 }}
-      whileInView={{ filter: "blur(0px)", y: 0, opacity: 1 }}
-      transition={{ duration: 1, ease: "easeOut", delay: 0 }}
-      viewport={{ once: true, amount: 0.1 }}
+      initial={{ y: 70, opacity: 0 }}
+      whileInView={{ y: 0, opacity: 1 }}
+      transition={{ duration: 0.7, ease: "easeInOut", delay: 0 }}
+      viewport={{ once: true, amount: 0.001 }}
       className="lg:w-4xl  h-auto  lg:h-fit   border shadow-gray-300/50 backdrop-blur-sm dark:bg-black/40 bg-white/40 shadow-inner rounded-4xl px-3 lg:px-10 flex flex-col"
     >
       <div className="h-fit text-center  py-1.5 text-2xl">{title}</div>
       {thumbnails && thumbnails.length > 0 && (
-        <div className="relative  border  w-full h-fit overflow-hidden rounded-b-none rounded-2xl lg:rounded-b-none shadow-lg">
+        <div className="relative  border w-fit  h-fit overflow-hidden rounded-b-none rounded-2xl lg:rounded-b-none shadow-lg">
           <Carousel>
             <CarouselContent>
               {thumbnails.map((pic, index) => (
@@ -73,9 +73,12 @@ export default function ProjectCard({
                   <CldImage
                     alt={pic}
                     src={pic}
-                    width={800}
-                    height={500}
-                    className="w-full h-auto object-cover"
+                    width={1200}
+                    height={750}
+                    className="w-full h-auto object-contain"
+                    quality="90"
+                    crop="fit"
+                    loading="lazy"
                   />
                 </CarouselItem>
               ))}

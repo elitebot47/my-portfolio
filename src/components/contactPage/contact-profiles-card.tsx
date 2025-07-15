@@ -8,7 +8,7 @@ import SocialIconButton from "../homePage/text-content-side/social-icon-strip/so
 export default function ContactProfilesCard() {
   return (
     <motion.div
-      transition={{ duration: 0.8, ease: "easeOut" }}
+      transition={{ duration: 0.7, ease: "easeInOut" }}
       initial={{
         opacity: 0,
         filter: "blur(10px)",

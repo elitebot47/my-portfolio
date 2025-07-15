@@ -24,19 +24,19 @@ export default function CalButton() {
       initial={{ filter: "blur(10px)", opacity: 0 }}
       animate={{ filter: "blur(0px)", opacity: 1 }}
       transition={{
-        duration: 1,
-        ease: "easeOut",
+        duration: 0.7,
+        ease: "easeInOut",
       }}
       data-cal-link="rishabyadav-dev"
-      className="cursor-pointer 
-                 lg:px-4 py-2 px-3 
+      className="cursor-pointer
+                 lg:px-4 py-2 px-3
                  dark:bg-foreground/10 bg-foreground/30 border hover:border border-foreground/50
                  lg:text-xl not-first:text-lg text-white font-semibold rounded-xl hover:rounded-3xl shadow-md
                  items-center  place-content-center flex gap-2
                  focus:outline-none focus:ring-2 focus:ring-blue-200 focus:ring-opacity-75
 
-                 transition-all duration-500 ease-in-out 
-                 hover:px-5 
+                 transition-all duration-500 ease-in-out
+                 hover:px-5
                  dark:hover:bg-accent/50 hover:bg-foreground/60"
     >
       <CalendarRange className="pointer-events-none" />

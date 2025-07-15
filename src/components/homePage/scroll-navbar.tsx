@@ -18,7 +18,7 @@ export default function ScrollNavigation() {
       <motion.ul
         initial={{ x: -100, opacity: 0 }}
         animate={{ x: 0, opacity: 1 }}
-        transition={{ duration: 1 }}
+        transition={{ duration: 0.7, ease: "easeInOut" }}
         className="text-2xl space-y-4"
       >
         <li>

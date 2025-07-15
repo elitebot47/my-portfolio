@@ -7,7 +7,7 @@ export default function Education({ className }: { className?: string }) {
     <motion.div
       initial={{ filter: "blur(10px)", y: 50, opacity: 0 }}
       animate={{ filter: "blur(0px)", y: 0, opacity: 1 }}
-      transition={{ duration: 1, ease: "easeOut" }}
+      transition={{ duration: 0.7, ease: "easeInOut" }}
       className={`${className} `}
     >
       <h1 className="text-3xl text-center lg:text-start mb-4 font-bold">
