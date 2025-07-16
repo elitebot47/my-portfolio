@@ -14,7 +14,7 @@ export default function Navbar() {
       className="shadow-xs dark:shadow-foreground/5 shadow-foreground/10 rounded-full"
     >
       <motion.div
-        className={` max-w-xs shadow-inner dark:shadow-white/20 shadow-black/10  backdrop-blur-lg  rounded-full lg:h-12 h-[51px] flex dark:bg-black/70 bg-white/70 p-1 `}
+        className={` max-w-xs shadow-inner dark:shadow-white/30 shadow-black/20  backdrop-blur-lg  rounded-full lg:h-12 h-[51px] flex dark:bg-black/60 bg-white/70 p-1 `}
       >
         <NavbarButton href="/" icon={<HomeIcon />} />
         <Separator
