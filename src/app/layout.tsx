@@ -23,7 +23,7 @@ const roboto = Roboto({
 
 export const metadata: Metadata = {
   icons: {
-    icon: "/favicon.ico", 
+    icon: "/favicon.ico",
   },
   title: "Rishab Yadav | Full Stack Web Developer",
   description:
@@ -51,8 +51,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "Rishab Yadav | Full Stack Web Developer",
-    description:
-      "Explore Rishab Yadav's portfolio: Next.js, React, Typescript & more.",
+    description: "Explore Rishab Yadav's portfolio: Next.js, React, Typescript & more.",
     images: ["https://www.rishabyadav.com/og-image.png"],
   },
 };
