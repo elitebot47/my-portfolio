@@ -51,7 +51,8 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "Rishab Yadav | Full Stack Web Developer",
-    description: "Explore Rishab Yadav's portfolio: Next.js, React, Typescript & more.",
+    description:
+      "Explore Rishab Yadav's portfolio: Next.js, React, Typescript & more.",
     images: ["https://www.rishabyadav.com/og-image.png"],
   },
 };
@@ -81,7 +82,7 @@ export default async function RootLayout({
             <div className="fixed  inset-0 flex justify-center opacity-60 z-10 pointer-events-none">
               <div className="h-screen bg-gradient-blue-to-white-inverted dark:bg-gradient-blue-to-black-inverted lg:bg-gradient-blue-to-white lg:dark:bg-gradient-blue-to-black w-full mx-auto flex"></div>
             </div>
-            <main className="flex-grow z-20 pb-16   scrollbar-none bg-white/30 dark:bg-black/30">
+            <main className="flex-grow z-20  lg:pb-16  pb-0 scrollbar-none bg-white/30 dark:bg-black/30">
               {children}
             </main>
             <footer className="z-20  h-fit w-full">
