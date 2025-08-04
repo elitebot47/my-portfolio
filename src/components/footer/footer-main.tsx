@@ -27,9 +27,6 @@ export default function Footer() {
         >
           CC BY 4.0
         </Link>
-        <span>
-          • Please provide attribution if you use or adapt this design.
-        </span>
       </div>
     </footer>
   );
