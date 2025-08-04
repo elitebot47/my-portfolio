@@ -8,13 +8,12 @@ import {
   CarouselPrevious,
 } from "@/components/ui/carousel";
 import { Play } from "lucide-react";
-import { motion } from "motion/react";
 import { CldImage } from "next-cloudinary";
 import Link from "next/link";
 import React from "react";
 import { SiGithub } from "react-icons/si";
-import { Separator } from "../ui/separator";
 import { SkillColumn } from "../homePage/text-content-side/skill-section/skills";
+import { Separator } from "../ui/separator";
 
 function ProjectCardButton({
   link,
@@ -56,13 +55,7 @@ export default function ProjectCard({
   techUsed: { name: string; symbol?: React.ReactNode }[];
 }) {
   return (
-    <motion.div
-      initial={{ y: 70, opacity: 0 }}
-      whileInView={{ y: 0, opacity: 1 }}
-      transition={{ duration: 0.7, ease: "easeInOut", delay: 0 }}
-      viewport={{ once: true, amount: 0.001 }}
-      className="lg:w-4xl  h-auto  lg:h-fit   border shadow-gray-300/50 backdrop-blur-sm dark:bg-black/40 bg-white/40 shadow-inner rounded-4xl px-3 lg:px-10 flex flex-col"
-    >
+    <div className="lg:w-4xl  h-auto  lg:h-fit   border shadow-gray-300/50 backdrop-blur-sm dark:bg-black/40 bg-white/40 shadow-inner rounded-4xl px-3 lg:px-10 flex flex-col">
       <div className="h-fit text-center  py-1.5 text-2xl">{title}</div>
       {thumbnails && thumbnails.length > 0 && (
         <div className="relative  border w-fit  h-fit overflow-hidden rounded-b-none rounded-2xl lg:rounded-b-none shadow-lg">
@@ -131,6 +124,6 @@ export default function ProjectCard({
           />
         )}
       </div>
-    </motion.div>
+    </div>
   );
 }

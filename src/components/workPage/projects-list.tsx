@@ -1,3 +1,8 @@
+"use client";
+
+import { motion } from "motion/react";
+import React from "react";
+import { FiFramer } from "react-icons/fi";
 import {
   RiNextjsFill,
   RiNodejsFill,
@@ -5,30 +10,29 @@ import {
   RiTailwindCssFill,
 } from "react-icons/ri";
 import {
-  SiPrisma,
-  SiPostgresql,
-  SiFastapi,
-  SiTypescript,
-  SiShadcnui,
-  SiPytorch,
-  SiVercel,
-  SiHuggingface,
-  SiSocketdotio,
   SiCloudinary,
+  SiExpress,
+  SiFastapi,
+  SiFramer,
+  SiHuggingface,
+  SiJsonwebtokens,
   SiMongodb,
   SiMongoose,
-  SiReactquery,
-  SiExpress,
-  SiRecoil,
-  SiJsonwebtokens,
-  SiFramer,
-  SiVite,
+  SiPostgresql,
+  SiPrisma,
+  SiPytorch,
   SiReacthookform,
+  SiReactquery,
   SiReactrouter,
+  SiRecoil,
+  SiShadcnui,
+  SiSocketdotio,
+  SiTypescript,
+  SiVercel,
+  SiVite,
 } from "react-icons/si";
 import ProjectCard from "./project-card";
-import React from "react";
-import { FiFramer } from "react-icons/fi";
+
 interface ProjectProps {
   id?: number;
   title: string;
@@ -39,6 +43,7 @@ interface ProjectProps {
   stage: "Completed" | "Development" | "Beta" | "Archived";
   techUsed: { name: string; symbol?: React.ReactNode }[];
 }
+
 const projects: ProjectProps[] = [
   {
     id: 1,
@@ -52,7 +57,7 @@ const projects: ProjectProps[] = [
     ],
     github_url: "https://github.com/rishabyadav-dev/DocWise",
     deployment_url: "https://doc-wise.vercel.app",
-    stage: "Completed",
+    stage: "Beta",
     techUsed: [
       { name: "Pytorch", symbol: <SiPytorch /> },
       { name: "FastAPI", symbol: <SiFastapi /> },
@@ -192,9 +197,14 @@ const projects: ProjectProps[] = [
   },
 ];
 
-export default async function ProjectList() {
+export default function ProjectList() {
   return (
-    <div className="w-full  flex flex-col gap-10 pb-28 items-center h-fit">
+    <motion.div
+      initial={{ opacity: 0, y: 70, filter: "blur(10px)" }}
+      animate={{ opacity: 1, y: 0, filter: "blur(0px)" }}
+      transition={{ duration: 0.8, ease: "easeInOut" }}
+      className="w-full  flex flex-col gap-10 pb-28 items-center h-fit"
+    >
       {projects.map((project: ProjectProps) => (
         <div className=" w-full rounded-4xl" key={project.id}>
           <ProjectCard
@@ -208,6 +218,6 @@ export default async function ProjectList() {
           />
         </div>
       ))}
-    </div>
+    </motion.div>
   );
 }

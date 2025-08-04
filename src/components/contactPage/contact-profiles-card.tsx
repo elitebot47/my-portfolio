@@ -8,7 +8,7 @@ import SocialIconButton from "../homePage/text-content-side/social-icon-strip/so
 export default function ContactProfilesCard() {
   return (
     <motion.div
-      transition={{ duration: 0.7, ease: "easeInOut" }}
+      transition={{ duration: 0.8, ease: "easeInOut" }}
       initial={{
         opacity: 0,
         filter: "blur(10px)",
@@ -17,7 +17,8 @@ export default function ContactProfilesCard() {
         opacity: 1,
         filter: "blur(0px)",
       }}
-      className={`font-mono  bg-accent/30 w-full p-6 rounded-4xl shadow-2xl dark:shadow-white/10 shadow-black/20   h-fit`}
+      className={`font-mono  bg-accent/30 w-fit
+         p-6 rounded-4xl shadow-2xl dark:shadow-white/10 shadow-black/20   h-fit`}
     >
       <h1 className=" lg:text-xl text-[16px] lg:text-start text-center font-extralight">
         I create beautiful, organized websites and web applications that empower
