@@ -34,7 +34,7 @@ export default async function Home() {
           <section id="intro" className="lg:px-2">
             <IntroArea className="lg:mb-24 mb-12" />
           </section>
-          <section className="" id="skills">
+          <section id="skills">
             <SkillsArea className=" bg-accent/20 backdrop-blur-lg shadow-inner shadow-black/15 dark:shadow-white/15 mb-6 border rounded-4xl  px-4 py-6" />
           </section>
           <section id="education">
