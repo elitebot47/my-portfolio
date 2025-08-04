@@ -2,7 +2,7 @@ import Link from "next/link";
 
 export default function Footer() {
   return (
-    <footer className="h-fit lg:text-start border-t-2 border-white/20 text-center py-1.5 bg-accent dark:bg-accent/50 lg:px-8 lg:py-2">
+    <footer className="h-fit lg:text-start border-t-2 lg:flex block border-white/20 text-center lg:py-2.5 py-1.5 bg-accent dark:bg-accent/50 lg:px-8 ">
       <div className="lg:text-lg flex justify-center items-center text-foreground gap-x-2 leading-none">
         <small className="align-middle">© {new Date().getFullYear()}</small>
         <span className="align-middle">•</span>
@@ -17,7 +17,7 @@ export default function Footer() {
           Rishab Yadav
         </Link>
       </div>
-      <div className="lg:text-xs text-[7px] text-foreground/70 mt-1 flex justify-center items-center lg:gap-x-1">
+      <div className="lg:text-xs text-[7px] lg:ml-auto ml-0 text-foreground/70 lg:mt-0 mt-1 flex justify-center items-center lg:gap-x-1">
         <span>Design licensed under</span>
         <Link
           href="https://creativecommons.org/licenses/by/4.0/"
